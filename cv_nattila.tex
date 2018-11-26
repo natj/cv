@@ -30,9 +30,9 @@
 \author{joonas.nattila@su.se}
 \date{}
  
+\newcolumntype{L}{>{\raggedleft}p{0.10\textwidth}}
+\newcolumntype{R}{p{0.82\textwidth}}
 \definecolor{lightgray}{gray}{0.8}
-\newcolumntype{L}{>{\raggedleft}p{0.12\textwidth}}
-\newcolumntype{R}{p{0.8\textwidth}}
 \newcommand\VRule{\color{lightgray}\vrule width 0.5pt}
 
 %%%%%%%%%
@@ -217,7 +217,7 @@ Currently co-supervising 1 PhD thesis.
 \vspace{-5pt}
 \section*{Presentations \& Talks\blfootnote{\today}}
 \vspace{-5pt}
-7 invited, 18 contributed talks.
+7 invited, 19 contributed talks.
 \vspace{-5pt}
 \subsection*{\phantom{sub} Invited:}
 \begin{tabular}{L!{\VRule}R}
@@ -232,6 +232,7 @@ Currently co-supervising 1 PhD thesis.
 
 \subsection*{\phantom{sub} Contributed:}
 \begin{tabular}{L!{\VRule}R}
+  2018 & \textbf{Astroplasmas: Particle acceleration and transport}, Rende, Italy. \\
   2018 & \textbf{Tuorla-Tarto meeting}, Turku, Finland. \\
   2018 & \textbf{Astroplasmas seminar}, Princeton, USA. \\
   2018 & \textbf{High energy astro group meeting}, Columbia University, USA. \\
@@ -256,10 +257,10 @@ Currently co-supervising 1 PhD thesis.
 \newpage
 
 
-\vspace{-3pt}
+\vspace{-5pt}
 \section*{Funding}\blfootnote{\today}
 %\section*{Research \& Travel funding}
-\vspace{-1cm}
+\vspace{-1.1cm}
 \subsection*{\phantom{sub} Research}
 \begin{tabular}{L!{\VRule}R}
 %  2015--2017 & $\mathbf{\sim82\,000~\mathbf{eur}~}$ \textbf{UTUGS Physical and Chemical Sciences funded Ph.D. position}\\
@@ -288,31 +289,32 @@ $+$ Some smaller travel grants ($\sim 10$k eur).
 %
 %$+$ Some smaller travel grants.
 
-\vspace{-5pt}
+\vspace{-8pt}
 \subsection*{\phantom{sub} Observation time}
 \begin{tabular}{L!{\VRule}R}
     2018 & \textbf{NuSTAR/INTEGRAL/XMM-Newton ToO time (30ks/170ks/100ks)} \\
          &  \small{Co-I, Proposal 1540022:} \footnotesize{Measuring the High Energy Emission of Millisecond X-Ray Pulsars in Outburst} \\[1ex]
 \end{tabular}
 
-\vspace{-5pt}
-\subsection*{\phantom{sub} Computing resources}
+\vspace{-8pt}
+\subsection*{\phantom{sub} Supercomputer time}
 \begin{tabular}{L!{\VRule}R}
 %  2019 & $ \mathbf{\sim22\mathrm{M~cpu-hour}~}$ Co-PI: \small{\textbf{SNIC} Astrophysical turbulence and dynamo action} \\
     2018 & $ \mathbf{\sim60\mathbf{k}~\mathbf{CPU h}~}$ \textbf{SNIC/Kebnekaise}, \small{\textbf{PI}: Relativistic plasma in silico (testing of \textsc{PlasmaBox}).} \\
 \end{tabular}
 
-\vspace{-3pt}
+\vspace{-5pt}
 \section*{Professional Societies and Services}
 \vspace{-5pt}
 \begin{tabular}{L!{\VRule}R}
-  2018--\phantom{3000} & IAU Junior member \\
-  2016--\phantom{3000} & eXTP Dense Matter science working group \\
-  2015--\phantom{3000} & ESA XIPE satellite Science Team (SWG2.2 Accreting Millisecond Pulsars)  \\
-  2014--\phantom{3000} & Organizing committee for CSC HPC Summer Schools \\
-  2013--\phantom{3000} & JuliaLang organization \\
-  2012--\phantom{3000} & Finnish Astronomical Society \\[1ex]
-                       & Referee for Monthly Notices of Royal Astronomical Society, Astronomy \& Astrophysics \\
+    2018--\phantom{3} & IAU Junior member \\
+    2016--\phantom{3} & eXTP Dense Matter science working group \\
+    2015--\phantom{3} & ESA XIPE satellite Science Team (SWG2.2 Accreting Millisecond Pulsars)  \\
+    2014--\phantom{3} & Member of organizing committee for CSC HPC Summer Schools \\
+    2013--\phantom{3} & Member of JuliaLang organization \small{(Open source community for Julia programming language)}\\
+    2012--\phantom{3} & Member of Finnish Astronomical Society \\[2ex]
+    2017\phantom{--3} & Organizer \& Convener for CompCoffee meetings \small{(weekly meetings to discuss computational problems)} \\[1ex]
+                      & Referee for Monthly Notices of Royal Astronomical Society, Astronomy \& Astrophysics \\
 \end{tabular}
 
 \vspace{-5pt}
@@ -329,7 +331,6 @@ $+$ Some smaller travel grants ($\sim 10$k eur).
   & Chairman \& member of the organizing committee.\\[1ex]
   
 \end{tabular}
-
 
 
 \vspace{-5pt}
@@ -357,12 +358,15 @@ And in international media:
 \section*{Open source software}
 \vspace{-5pt}
 \begin{tabular}{L!{\VRule}R}
-    & \textbf{PlasmaBox}, Modern \textsc{C++}-14/\textsc{python3} toolbox for kinetic plasma simulations. \href{https://github.com/natj/PlasmaBox}{\nolinkurl{https://github.com/natj/plasmabox}} \\[1ex]
-    & \textbf{Bender, ray tracing code}, general relativistic ray tracing code for computing radiation from rapidly rotating oblate neutron stars. \href{https://github.com/natj/bender}{\nolinkurl{https://github.com/natj/bender}} \\[1ex]
-    & \textbf{Hydro, modular 2d hydrodynamical code} with unsplitted HLLC Rieman solver, second order Runge-Kutta time-stepping, and linear piecewise reconstruction. \href{https://github.com/natj/hydro}{\nolinkurl{https://github.com/natj/hydro}} \\[1ex]
-    & \textbf{CellularAutomata.jl}, Julia library for elementary and totalistic Cellular automata modeling. \href{https://github.com/natj/CellularAutomata.jl}{\nolinkurl{https://github.com/natj/CellularAutomata.jl}} \\[1ex]
+    & \textbf{PlasmaBox}, Modern \textsc{C++}-14/\textsc{python3} toolbox for kinetic plasma simulations. \mbox{\href{https://github.com/natj/PlasmaBox}{\nolinkurl{https://github.com/natj/plasmabox}}} \\[1ex]
+    & \textbf{CORGI}, \textsc{C++}-14 template grid infrastructure for massively parallel multi-physics simulations. \mbox{\href{https://github.com/natj/corgi}{\nolinkurl{https://github.com/natj/corgi}}} \\[1ex]
+    & \textbf{mpi4cpp}, User-friendly MPI headers for modern \textsc{C++} with template metaprogramming. \mbox{\href{https://github.com/natj/mpi4cpp}{\nolinkurl{https://github.com/natj/mpi4cpp}}} \\[1ex]
+    & \textbf{Bender, ray tracing code}, general relativistic ray tracing code for computing radiation from rapidly rotating oblate neutron stars. \mbox{\href{https://github.com/natj/bender}{\nolinkurl{https://github.com/natj/bender}}} \\[1ex]
+    & \textbf{Hydro, modular 2d hydrodynamical code} with unsplitted HLLC Rieman solver, second order Runge-Kutta time-stepping, and linear piecewise reconstruction. \mbox{\href{https://github.com/natj/hydro}{\nolinkurl{https://github.com/natj/hydro}}} \\[1ex]
+    & \textbf{CellularAutomata.jl}, Julia library for elementary and totalistic Cellular automata modeling. \mbox{\href{https://github.com/natj/CellularAutomata.jl}{\nolinkurl{https://github.com/natj/CellularAutomata.jl}}} \\[1ex]
 \end{tabular}
 
+$+$ Smaller libraries and software available at \mbox{\href{https://github.com/natj}{\nolinkurl{https://github.com/natj}}}.
 
 %Little space between publication part
 %\section*{}
