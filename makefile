@@ -1,5 +1,6 @@
+default: long
 
-all: 
+long: 
 	pdflatex cv_nattila
 	bibtex cv_nattila
 	pdflatex cv_nattila
@@ -10,3 +11,9 @@ all:
 	convert -thumbnail x300 -background white -alpha remove cv_nattila.pdf[2] snapshot2.png
 	convert -thumbnail x300 -background white -alpha remove cv_nattila.pdf[3] snapshot3.png
 
+short: 
+	pdflatex cv_nattila_short
+	bibtex cv_nattila_short
+	pdflatex cv_nattila_short
+	pdflatex cv_nattila_short
+	rm *.{aux,bbl,blg,log,out}
