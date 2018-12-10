@@ -21,7 +21,5 @@ short:
 
 one: 
 	pdflatex cv_nattila_onepg
-	bibtex cv_nattila_onepg
-	pdflatex cv_nattila_onepg
 	pdflatex cv_nattila_onepg
 	rm *.{aux,bbl,blg,log,out}
