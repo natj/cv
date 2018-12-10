@@ -1,0 +1,282 @@
+\documentclass[10pt]{article}
+%\usepackage{array, xcolor, bibentry}
+\usepackage{array, xcolor}
+\usepackage[margin=1.8cm]{geometry}
+\usepackage[colorlinks = true,
+            linkcolor = blue,
+            urlcolor  = blue,
+            citecolor = blue,
+            anchorcolor = blue]{hyperref}
+
+\newcommand\blfootnote[1]{%
+  \begingroup
+  \renewcommand\thefootnote{}\footnote{#1}%
+  \addtocounter{footnote}{-1}%
+  \endgroup
+}
+
+
+% page headers
+%\usepackage{fancyhdr}
+%\pagestyle{fancy}
+%\fancyhf{}
+%\definecolor{gray75}{gray}{0.8}
+%\cfoot{\footnotesize \textcolor{gray}{\thepage~/~5}}
+%\cfoot{\footnotesize \thepage~/~5}
+
+
+\title{\vspace{-35pt}\bfseries\Huge Joonas N\"attil\"a}% \\[15pt]
+%\Huge Curriculum Vitae}
+\author{joonas.nattila@su.se}
+\date{}
+ 
+\newcolumntype{L}{>{\raggedleft}p{0.10\textwidth}}
+\newcolumntype{R}{p{0.82\textwidth}}
+\definecolor{lightgray}{gray}{0.8}
+\newcommand\VRule{\color{lightgray}\vrule width 0.5pt}
+
+%%%%%%%%%
+\usepackage{etaremune}
+\makeatletter
+\long\def\thebibliography#1{%
+  \section*{\refname}%
+  \@mkboth{\MakeUppercase\refname}{\MakeUppercase\refname}
+  \settowidth{\dimen0}{\@biblabel{#1}}%
+  \setlength{\dimen2}{\dimen0}%
+  \addtolength{\dimen2}{\labelsep}
+  \sloppy
+  \clubpenalty 4000 
+  \@clubpenalty 
+  \clubpenalty 
+  \widowpenalty 4000
+  \sfcode `\.\@m
+  \renewcommand{\labelenumi}{\@biblabel{\theenumi}} % labels like [3], [2], [1]
+  \begin{etaremune}[labelwidth=\dimen0,leftmargin=\dimen2]\@openbib@code
+}
+\def\endthebibliography{\end{etaremune}}
+\def\@bibitem#1{%
+  \item \if@filesw\immediate\write\@auxout{\string\bibcite{#1}{\the\value{enumi}}}\fi\ignorespaces
+}
+\makeatother
+%%%%%%%%%%%%%%%%%%%%%
+
+ 
+\begin{document}
+%\pagenumbering{gobble}
+\maketitle
+
+\vspace{-20pt}
+%\begin{minipage}[ht]{\textwidth}
+%
+\begin{minipage}[ht]{0.650\textwidth}
+Sex: Male\\
+Born: June 25th, 1989, Tornio, Finland\\
+Nationality: Finnish citizen\\
+Languages: Finnish (native), English, Swedish  \\
+%\phantom{Languages:} 
+\end{minipage}
+%
+\begin{minipage}[ht]{0.24\textwidth}
+Nordita \\
+Roslagstullsbacken 17 \\
+SE-10691, Sweden \\
+Tel: +358 453577992 \\
+\url{http://natj.github.io}
+\end{minipage}
+%\vspace{10pt}
+%\end{minipage} 
+
+\vspace{-12pt}
+\section*{Research interests\blfootnote{\today}} 
+\vspace{-5pt}
+
+\noindent \textit{High-energy astrophysics}: \small{accretion (accretion disks); compact objects (neutron stars, black holes)}
+
+%\noindent \textit{Plasma physics}:           \small{collisionless plasma dynamics; turbulence; particle acceleration}
+
+\noindent \textit{Nuclear physics}:          \small{equation of state of cold ultra-dense matter}
+
+\noindent \textit{General relativity}:       \small{ray tracing}
+
+\noindent \textit{Statistics}:               \small{Bayesian inference; Monte Carlo methods}
+
+%\noindent \textit{Computer sciences}:        \small{high-performance computing; parallelization paradigms; machine learning; Julia language}
+
+%\noindent \textit{Mathematics}:              \small{cellular automata models; topology}
+
+ 
+
+% Employment
+\vspace{-10pt}
+\section*{Employment}
+\vspace{-3pt}
+\begin{tabular}{L!{\VRule}R}
+2018 --2019 & {\bf Nordita Fellow}, Nordita, Stockholm, Sweden. \\[1ex]
+%2016     & {\bf Nordita Visiting Ph.D. Fellow}, Nordita, Stockholm, Sweden. \\ [1ex]
+%         & \small{Constraining neutron star mass and radius.} \\[1ex]
+%Summer 2013 & {\bf Research Assistant}, University of Oulu, Finland. \\
+%         & \small{Constraining neutron star mass and radius.} \\[0.5ex]
+%
+%Summer 2012 & {\bf University Trainee}, University of Oulu, Finland. \\
+%         & \small{Dependence of X-ray burst spectral evolution on accretion rate.} \\[0.5ex]
+%
+%Summer 2011 & {\bf Research Assistant}, University of Oulu, Finland. \\
+%         & \small{Thermonuclear type-I X-ray bursts from neutron stars.} \\[0.5ex]
+
+\end{tabular}
+
+\vspace{-10pt}
+\section*{Education}
+\vspace{-3pt}
+
+\begin{tabular}{L!{\VRule}R}
+  2014--2017          & {\bf Ph.D. in Astrophysics (with honours)}, University of Turku, Finland.\\
+  & \small{Supervisor: Prof. Juri Poutanen, Director of Tuorla Observatory.} \\
+  & \footnotesize{Title: X-ray bursts as a tool to constrain the equation of state of the ultra-dense matter inside neutron stars} \\[1ex]
+  
+%  & \small{weighted GPA of $4.48/5$} / 4.5/10 GPA\\[1ex]  
+    2012--2013          & {\bf M.Sc. in Astronomy}, University of Oulu, Finland. \\ % \scriptsize{($4.71/5$ GPA)}\\
+%  & \small{weighted GPA of $4.75/5$} \\[1ex]  
+  2008--2012          & {\bf B.Sc. in Physics}, University of Oulu, Finland. \\ %\scriptsize{($4.51/5$ GPA)}\\
+%  & \small{weighted GPA of $4.48/5$} \\[1ex]   
+\end{tabular}
+
+\vspace{-10pt}
+\section*{Awards \& Recognitions}
+\vspace{-3pt}
+\begin{tabular}{L!{\VRule}R}
+  2018 & Turku Finnish University Society Prize for best doctoral dissertation \\
+  2018 & V\"ais\"al\"a Prize 2018: Prize for outstanding thesis in Astronomy \\
+  2018 & PCS Best Doctoral Thesis of 2017 Prize \\
+  2016 & Nordita Visiting Ph.D. Fellow\\
+\end{tabular}
+
+\vspace{-5pt}
+\section*{Presentations \& Talks (selected)}
+\vspace{-3pt}
+
+\begin{tabular}{L!{\VRule}R}
+  2018 & \textbf{Astroplasmas: Particle acceleration and transport}, Rende, Italy. \\
+  2018 & \textbf{\textit{Invited:}} \textbf{Time for Accretion}, Sigtuna, Sweden. \\
+  2018 & \textbf{Astroplasmas seminar}, Princeton, USA. \\
+  2018 & \textbf{\textit{Invited:}} \textbf{Fire and Ice: Hot QCD meets cold and dense matter}, Saariselk\"a, Finland. \\
+  2017 & \textbf{\textit{Invited:}} \textbf{Holographic dense QCD and neutron stars}, ENS, Paris, France. \\
+  2016 & \textbf{\textit{Invited:}} \textbf{From quarks to gravitational waves}, CERN. \\
+  2016 & \textbf{\textit{Invited:}} \textbf{JINA-CEE Symposium: Neutron Stars in the Multi-Messenger Era}, Ohio, USA. \\
+\end{tabular}
+
+\noindent
+In total 7 invited, 19 contributed.
+
+
+
+
+
+%--------------------------------------------------
+
+%\vspace{-5pt}
+%\section*{Funding}
+%%\section*{Research \& Travel funding}
+%%\vspace{-1.1cm}
+%\subsection*{\phantom{sub} Research}
+%\begin{tabular}{L!{\VRule}R}
+%%  2015--2017 & $\mathbf{\sim82\,000~\mathbf{eur}~}$ \textbf{UTUGS Physical and Chemical Sciences funded Ph.D. position}\\
+%    2016  & $\mathbf{\sim2\,000~\mathbf{eur}~}$ \textbf{Magnus Ehrnrooth Foundation} Travel grant\\[0.5ex]
+%  2015--2017 & \textbf{UTUGS Physical and Chemical Sciences funded 3yr. Ph.D. scholarship}\\
+%    & \small{Constraining neutron star mass and radius.}\\[0.5ex]
+%  2015--2016 & $\mathbf{23\,000~\mathbf{eur}~}$ \textbf{V\"ais\"al\"a Foundation grant} \\
+%    & \small{Magnetar atmosphere models} (\textit{Declined}) \\[0.5ex]
+%  2014--2015 & $\mathbf{23\,000~\mathbf{eur}~}$ \textbf{V\"ais\"al\"a Foundation grant} \\
+%    & \small{Magnetar atmosphere models: breaking the barrier between observations and theory} \\[0.5ex]
+%\end{tabular}
+%
+%$+$ Some smaller travel grants (in total $\sim 10$k eur).
+ 
+%\vspace{-15pt}
+%\subsection*{\phantom{sub} Travel}
+%%\subsubsection*{Travel funding}
+%\begin{tabular}{L!{\VRule}R}
+%  2016 & $ \mathbf{\sim1\,000~\mathbf{eur}~}$ \small{\textbf{CERN} From quarks to gravitational waves workshop.}\\
+%  2016 & $ \mathbf{\sim2\,000~\mathbf{eur}~}$ \small{\textbf{Magnus Ehrnrooth Foundation} JINA-CEE symposium (Ohio) and COSPAR 2016 (Istanbul).}\\
+%  2016 & $ \mathbf{\sim1\,000~\mathbf{eur}~}$ \small{\textbf{UTUGS Physical and Chemical Sciences} JINA-CEE symposium (Ohio).}\\
+%  2016 & $ \mathbf{\sim2\,000~\mathbf{eur}~}$ \small{\textbf{ESAC} Visiting scientist (host: Jari Kajava). }\\
+%%  2015 & $ \mathbf{\sim500~\mathbf{eur}~}   $ \small{\textbf{University of Tennessee} Research visit (host: Andrew Steiner).}\\
+%%  2015 & $ \mathbf{\sim500~\mathbf{eur}~}   $ \small{\textbf{University of Maryland} Research visit (host: Cole Miller).}\\
+%  2015 & $ \mathbf{\sim1\,000~\mathbf{eur}~}$ \small{\textbf{UTUGS Physical and Chemical Sciences} The Neutron Star Radius, and All That Jazz -conference, Montreal.}\\
+%  2015 & $ \mathbf{\sim1\,000~\mathbf{eur}~}$ \small{\textbf{ESAC} 40 years of X-ray bursts - conference.}\\
+%  2014 & $ \mathbf{\sim1\,000~\mathbf{eur}~}$ \small{\textbf{ESAC} Research visit (host: Jari Kajava).}\\
+%\end{tabular}
+%
+%$+$ Some smaller travel grants.
+
+%\vspace{-8pt}
+%\subsection*{\phantom{sub} Observation time}
+%\begin{tabular}{L!{\VRule}R}
+%    2018 & \textbf{NuSTAR/INTEGRAL/XMM-Newton ToO time (30ks/170ks/100ks)} \\
+%         &  \small{Co-I, Proposal 1540022:} \footnotesize{Measuring the High Energy Emission of Millisecond X-Ray Pulsars in Outburst} \\[1ex]
+%\end{tabular}
+%
+%\vspace{-8pt}
+%\subsection*{\phantom{sub} Supercomputer time}
+%\begin{tabular}{L!{\VRule}R}
+%%  2019 & $ \mathbf{\sim22\mathrm{M~cpu-hour}~}$ Co-PI: \small{\textbf{SNIC} Astrophysical turbulence and dynamo action} \\
+%    2018 & $ \mathbf{\sim60\mathbf{k}~\mathbf{CPU h}~}$ \textbf{SNIC/Kebnekaise}, \small{\textbf{PI}: Relativistic plasma in silico (testing of \textsc{PlasmaBox}).} \\
+%\end{tabular}
+
+\vspace{-10pt}
+\section*{Professional Societies and Services}
+\vspace{-5pt}
+\begin{tabular}{L!{\VRule}R}
+    2018--\phantom{3} & IAU Junior member \\
+%    2017              & Organizer \& Convener for CompCoffee meetings \small{(weekly meetings to discuss computational problems)} \\
+    2016--\phantom{3} & eXTP Dense Matter science working group \\
+%    2016--\phantom{3} & Referee for Monthly Notices of Royal Astronomical Society, Astronomy \& Astrophysics \\
+    2015--\phantom{3} & ESA XIPE satellite Science Team (SWG2.2 Accreting Millisecond Pulsars)  \\
+%    2014--\phantom{3} & Member of organizing committee for CSC HPC Summer Schools \\
+    2013--\phantom{3} & Member of JuliaLang organization \small{(Open source community for Julia programming language)}\\
+    2012--\phantom{3} & Member of Finnish Astronomical Society \\[2ex]
+\end{tabular}
+
+\noindent 
+In addition, referee for Monthly Notices of the Royal Astronomical Society and Astronomy \& Astrophysics since 2016.
+
+%\vspace{-5pt}
+%\section*{Conference organization}
+%\vspace{-5pt}
+%\begin{tabular}{L!{\VRule}R}
+%  2017     & \textbf{Nordita Workshop: Exascale thinking of particle energization problems}, Stockholm, Sweden. \\
+%  & Member of the scientific and local organizing committee. \\[1ex]
+%
+%  2015     & \textbf{Workshop on Relativistic Astrophysics}, Kavalto, Finland. \\
+%  & Member of the local organizing committee. \\[1ex]
+%
+%  2015     & \textbf{PCS Annual Seminar day}, University of Turku, Finland. \\
+%  & Chairman \& member of the organizing committee.\\[1ex]
+%  
+%\end{tabular}
+
+
+\vspace{-10pt}
+\section*{Public outreach}
+\vspace{-5pt}
+My research has been presented in various local (Finnish) media: 
+%TT lehti x2
+\href{http://www.tiedetuubi.fi/avaruus/suomalaistutkijat-varmistivat-uuden-tavan-tehda-alkuaineita-loyto-voi-auttaa-selvittamaan}{tiedetuubi.fi (30.11.2016)},
+\href{http://www.ts.fi/uutiset/paikalliset/3724265/Uusi+menetelma+mahdollistaa+neutronitahtien+sateen+mittauksen+galaksin+toiselta+laidalta}{Turun Sanomat (10.11.2017)},
+\href{https://www.turkulainen.fi/artikkeli/578926-turun-yliopiston-tutkimusryhma-kehitti-tavan-mitata-neutronitahtien-kokoa}{Turkulainen (10.11.2017)},
+\href{https://www.avaruus.fi/uutiset/tahdet-sumut-ja-galaksit/turkulaiset-keksivat-uuden-tavan-mitata-neutronitahtien-kokoa.html}{T{\"a}hdet \& Avaruus (25.11.2017)},
+\href{http://www.aamuset.fi/uutiset/3758822/Kosmiset+ydinrajahdykset+tuovat+uutta+tietoa+neutronitahtien+rakenteesta}{Aamuset (8.12.2017)},
+\href{https://www.tekniikkatalous.fi/tiede/avaruus/neutronitahtien-tutkija-kaytti-apunaan-nasa-n-satelliitteja-kynaa-ja-paperia-kuutiosentti-neutronimateriaa-painaa-uskomattomat-100-miljoonaa-tonnia-6691137}{Tekniikka \& Talous (8.12.2017)},
+\href{https://www.verkkouutiset.fi/kosmisista-ydinrajahdyksista-uutta-tietoa-neutronitahtien-rakenteesta/}{Verkkouutiset (8.12.2017)};
+And in international media:
+\href{https://cosmosmagazine.com/space/nuke-blasts-reveal-true-size-of-neutron-stars}{Cosmos 27.11.2017}.
+\vspace{15pt}
+
+%\begin{tabular}{L!{\VRule}R}
+%%  2016     & Finnish Astronomical magazine (\textit{T\"ahdet ja Avaruus}) showcased our work on X-ray bursts. \textit{In prep.} \\[1ex]
+%  2016     & Finnish science blog reported on our work about heavy metal enrichment of the Universe from thermonuclear X-ray bursts  \\[1ex]
+%\end{tabular}
+
+
+\end{document}
+
