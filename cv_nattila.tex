@@ -1,0 +1,881 @@
+%\documentclass[a4paper, onecolumn, 11pt]{article}
+\documentclass[letterpaper, onecolumn, 11pt]{article}
+
+\usepackage[a4paper,left=2cm,top=2.0cm,bottom=1.5cm,right=2cm, headheight=0.1cm, footskip=0.5cm]{geometry}
+
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx} 		% Add graphics capabilities
+\usepackage{color}
+\usepackage{array}
+\usepackage{xcolor}
+\usepackage[colorlinks = true,
+            linkcolor = blue,
+            urlcolor  = blue,
+            citecolor = blue,
+            anchorcolor = blue]{hyperref}
+
+\usepackage{enumitem}
+\setitemize{noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt,leftmargin=*}
+
+\usepackage{amsmath}  		% Better maths support
+\usepackage{amssymb}
+
+\usepackage{titlesec}
+%\titleformat*{\title}{\bfseries}
+\titleformat*{\section}{\bfseries}
+%\titleformat*{\subsection}{\itshape}
+%\titleformat*{\subsubsection}{\normalsize}
+%\titlespacing\section{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+%\titlespacing\subsection{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+%\titlespacing\subsubsection{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0pt} % Remove line at top
+
+\lhead{\textcolor{darkgray}{\emph{N\"attil\"a}}}
+\chead{\textcolor{darkgray}{}}
+\rhead{\textcolor{darkgray}{\emph{CV}}}
+%\rhead{\textcolor{darkgray}{\emph{Publication list}}}
+\cfoot{\textcolor{darkgray}{\thepage}/7} %\pageref{LastPage}}
+
+
+
+\newcommand\blfootnote[1]{%
+  \begingroup
+  \renewcommand\thefootnote{}\footnote{#1}%
+  \addtocounter{footnote}{-1}%
+  \endgroup
+}
+
+
+%\Huge Curriculum Vitae}
+%\author{joonas.nattila@su.se}
+
+%\author{jnattila@flatironinstitute.org}
+%\date{}
+ 
+
+\newcolumntype{L}{>{\raggedleft}p{0.11\textwidth}}
+\newcolumntype{R}{p{0.89\textwidth}}
+\definecolor{lightgray}{gray}{0.8}
+\newcommand\VRule{\color{lightgray}\vrule width 0.5pt}
+
+%%%%%%%%%
+\usepackage{etaremune}
+\makeatletter
+\long\def\thebibliography#1{%
+  \section*{\refname}%
+  \@mkboth{\MakeUppercase\refname}{\MakeUppercase\refname}
+  \settowidth{\dimen0}{\@biblabel{#1}}%
+  \setlength{\dimen2}{\dimen0}%
+  \addtolength{\dimen2}{\labelsep}
+  \sloppy
+  \clubpenalty 4000 
+  \@clubpenalty 
+  \clubpenalty 
+  \widowpenalty 4000
+  \sfcode `\.\@m
+  \renewcommand{\labelenumi}{\@biblabel{\theenumi}} % labels like [3], [2], [1]
+  \begin{etaremune}[labelwidth=\dimen0,leftmargin=\dimen2]\@openbib@code
+}
+\def\endthebibliography{\end{etaremune}}
+\def\@bibitem#1{%
+  \item \if@filesw\immediate\write\@auxout{\string\bibcite{#1}{\the\value{enumi}}}\fi\ignorespaces
+}
+\makeatother
+%%%%%%%%%%%%%%%%%%%%%
+
+ 
+\begin{document}
+%\setlength{\extrarowheight}{0.5ex}
+
+
+%\pagenumbering{gobble}
+%\maketitle
+
+\begin{center}
+\textbf{CURRICULUM VITAE}
+\end{center}
+
+
+\section*{PERSONAL INFORMATION}
+\vspace{-0.3cm}
+\begin{minipage}[ht]{0.6\textwidth}
+Last name, First name: N\"attil\"a, Joonas\\
+ORCID: \href{https://orcid.org/0000-0002-3226-4575}{\nolinkurl{0000-0002-3226-4575}} \\
+%Google Scholar: \href{https://scholar.google.com/citations?user=Wq1ZTb8AAAAJ}{Wq1ZTb8AAAAJ}\\
+%Date of birth: June 25, 1989\\
+%Nationality: Finnish\\
+%Languages: English, Finnish (native), Swedish  \\
+webpage: \url{http://natj.github.io} \\
+\end{minipage}
+%
+\begin{minipage}[ht]{0.40\textwidth}
+    Center for Computational Astrophysics \\
+    Flatiron Institute \\
+    162 5th Avenue, New York, NY-10010 \\
+%    webpage: \url{http://natj.github.io} \\
+%    CV updated: \today\\
+\end{minipage}
+
+
+\vspace{-0.5cm}
+\section*{EDUCATION} %\blfootnote{\today}
+\vspace{-0.3cm}
+\begin{tabular}{L!{\VRule}R}
+2014--2017 & PhD (with honors; ranked in the top 10\% of dissertations internationally)\\
+         & Faculty of Mathematics and Natural Sciences, University of Turku, Finland\\
+         & Advisor: Juri Poutanen\\[0.5ex]
+%  & \footnotesize{Title: X-ray bursts as a tool to constrain the equation of state of the ultra-dense matter inside neutron stars} \\[1ex]
+%  & \small{weighted GPA of $4.48/5$} / 4.5/10 GPA\\[1ex]  
+2012--2013 & MSc, Degree Program in Physics\\
+         & Faculty of Science, University of Oulu, Finland\\[0.5ex]
+    % \scriptsize{($4.71/5$ GPA)}\\ & \small{weighted GPA of $4.75/5$} \\[1ex]  
+%2008--2012& BSc, Degree Program in Physics\\
+%         & Faculty of Science, University of Oulu, Finland\\
+  %\scriptsize{($4.51/5$ GPA)}\\
+%  & \small{weighted GPA of $4.48/5$} \\[1ex]   
+\end{tabular}
+
+\vspace{-0.3cm}
+\section*{CURRENT POSITION}
+\vspace{-0.3cm}
+\begin{tabular}{L!{\VRule}R}
+ 2019--2023 & Postdoctoral Researcher (Joint Columbia/Flatiron Research Fellow)\\
+            & Department of Physics, Columbia University, USA\\
+            & Center for Computational Astrophysics, Flatiron Institute, USA\\
+            & Mentors: Andrei Beloborodov, Lorenzo Sironi (CU); James Cho, Sasha Philippov (FI)\\
+\end{tabular}
+
+
+\vspace{-0.3cm}
+\section*{PREVIOUS POSITIONS}
+\vspace{-0.3cm}
+\begin{tabular}{L!{\VRule}R}
+2018--2019 & Postdoctoral Researcher (Nordita Fellow) \\
+           & Nordic Institute for Theoretical Physics (NORDITA), Sweden \\
+           & Mentor: Axel Brandenburg\\[0.5ex]
+2014--2017 & PhD Student \\
+           & Faculty of Mathematics and Natural Sciences, University of Turku, Finland\\[0.5ex]
+2011--2013 & Research Assistant\\
+           & Astronomy Department, University of Oulu, Finland
+\end{tabular}
+
+
+\vspace{-0.3cm}
+\section*{FELLOWSHIPS, AWARDS, AND RECOGNITION}
+\vspace{-0.3cm}
+\begin{tabular}{L!{\VRule}R}
+  2022 & Cover of \textit{PRL} (vol. 128, issue 7), \textit{Editor's Suggestion}, and \textit{Viewpoint} article in APS \\
+  2021 & Mikael Bj\"ornberg Prize for Young Theoretical Physicist; $10\,000$ EUR, Finland \\
+  2021--2023 & Flatiron Research Fellow, Center for Computational Astrophysics, USA\\
+  2019 & Joint Princeton University/Flatiron Postdoctoral Research Fellowship (\textit{Declined}) \\
+  2018--2019 & Nordita Fellow, Nordic Institute for Theoretical Physics, Sweden\\
+  2018 & V\"ais\"al\"a Prize 2018: Outstanding Thesis in Astronomy, Finland \\
+  2018 & Turku Finnish University Society Prize for Best Doctoral Dissertation, Finland \\
+  2018 & PCS Best Doctoral Thesis of 2017 Prize, Finland \\
+  2016 & Nordita Visiting PhD Fellow, Nordita, Sweden \\
+  2015--2017 & University of Turku Chemical and Physical Sciences Program PhD Scholar Awardee\\
+  2014--2015 & V\"ais\"al\"a Foundation PhD Scholar Awardee \\
+\end{tabular}
+
+
+\vspace{-0.3cm}
+\section*{RESEARCH INTERESTS}
+\vspace{-0.3cm}
+\noindent \textbf{High-energy astrophysics}:
+accretion flows around black holes; %Energization of accretion flows around black holes;
+thermonuclear X-ray bursts; %fluid dynamics of thermonuclear X-ray bursts;
+magnetar X-ray bursts and FRBs; %radiative plasma physics of magnetar giant bursts and FRBs;
+neutron star mergers; %electromagnetic precursors of neutron star mergers;
+pulsars radio emission. %magnetospheres and radio emission
+
+\noindent \textbf{Plasma physics}: 
+turbulence; %in magnetically-dominated plasmas; 
+collisionless shocks;
+magnetic reconnection.
+
+\noindent \textbf{Fluid dynamics}: 
+storm dynamics on hot-exoplanet atmospheres.
+
+\noindent \textbf{Nuclear physics}: 
+constraining equation of state of ultra-dense matter inside neutron stars.
+
+\noindent \textbf{Computer sciences}: 
+high-performance computing; machine learning; Monte Carlo methods.
+
+\noindent \textbf{Mathematics}: 
+cellular automata models.
+
+
+%\vspace{-0.3cm}
+\section*{TEACHING}
+\vspace{-0.3cm}
+%Lectures (as a consultant) at the Finnish IT Center for Science (CSC) and universities/institutes. 
+%Excellent student ratings on courses (e.g., 9.8/10 for CSC Summer Schools). \\[1.0ex]
+\begin{tabular}{L!{\VRule}R}
+2021        & Lecturer, Nordita Winter School: \textit{Waves in Astrophysics}, Nordita, Sweden \\
+%            & \small{lecturer on ''Numerical methods for collisionless plasmas''.} \\[0ex]
+2019        & Visiting Lecturer, \textit{Computational fluid dynamics}, Columbia University, USA \\
+%            & \small{Visiting lecturer on ''Collisionless plasma simulations''.} \\[0ex]
+2015--2019 & Lecturer, ($5\times$) \textit{High Performance Computing Summer School}, CSC, Finland \\
+%    \footnotesize{(5 times)} & \small{Lecturer \& tutor for Finnish IT Center for Science HPC Summer School.} \\[0ex]
+2018--2019  & Lecturer, ($2 \times$) \textit{Introduction to Julia}, CSC, Finland \\
+%    \footnotesize{(2 times)} & \small{Lecturer for an introductory course on the Julia programming language.} \\[0ex]
+2015--2017 & Lecturer, ($3\times$) \textit{Software tools in Physics}, University of Turku, Finland \\
+%    \footnotesize{(3 times)}  & \small{Lecturer of the ``Introduction to Unix'' section of the course (3 ECTS).} \\[1ex]
+2011--2016 & Teaching Assistant in 10 courses (e.g., \textit{Thermophysics}, \textit{Electricity and Magnetism})
+\end{tabular}
+%In addition, teaching assistant in \textbf{Optics} (2016; 6 ECTS) in Univ. Turku, and \textbf{Thermophysics} (3 times, 2011---2013; 6 ECTS), \textbf{Electricity and Magnetism} (2012; 4 ECTS), \textbf{Laboratory Exercises in Physics 1} (2 times, 2011---2012; 3 ECTS), \textbf{Mathematics of Physics} (2011; 6 ECTS), and \textbf{Waveforms and Optics} (2 times, 2011; 6 ECTS) in Univ. Oulu.
+
+
+%\vspace{-0.3cm}
+\section*{MENTORING AND SUPERVISION}
+\vspace{-0.3cm}
+\noindent
+In total, advised/co-advised 1 PhD, 3 MSc, and 2 BSc students. In addition, advising 1 PreDoc (6-month PhD student project at Flatiron Institute).\\[1.0ex]
+\begin{tabular}{L!{\VRule}R}
+    2022--2023 & PreDoc advisor, Flatiron Pre-Doctoral Program (PhD student V. Loktev), USA\\
+    2017--2020 & PhD co-advisor (T. Salmi), University of Turku, Finland\\
+    2019--2020 & MSc advisor (J. Hope), Nordita/University of Bath, Sweden/UK\\
+    2019--2020 & Host for Nordita Visiting PhD students (M. Bussov, K. Smedt, T. Salmi), Sweden\\
+    2014--\phantom{2020} & Co-advisor of 3 BSc and MSc students (J. Kuuttila, T. Salmi), Finland\\[1ex]
+\end{tabular}
+In addition, supervised shorter student projects:
+%In addition, Nordita host for visiting PhD. students:
+%E. Van Woerkom,  2023;
+R. Serrano  (undergrad, 2023),
+M. Bussov  (PhD, 2019),
+K. Smedt  (PhD, 2019),
+T. Salmi (PhD, 2019).
+
+
+\section*{TALKS, SEMINARS, AND COLLOQUIUMS}
+\vspace{-0.3cm}
+\noindent
+In total, 2 colloquiums, 26 invited talks/seminars, and 28 contributed talks. Most recent ones include:\\[1.0ex]
+\begin{tabular}{L!{\VRule}R}
+  2023 & Invited CTC seminar at University of Maryland, USA \\
+  2023 & Invited talk at Hamilton Institute Workshop on \textit{Relativistic Plasmas}, Ireland \\
+%  2023 & Invited talk at CCA/Princeton Plasma Meeting,  USA \\
+%  2022 & invited talk at CITA EOS group meeting, Canada \\
+  2022 & Seminar at CITA (Canadian Institute for Theoretical Astrophysics), Canada \\
+%  2022 & Talk at APS DPP, USA\\
+  2022 & Colloquium at the Department of Physics, Brandeis University, USA \\
+  2022 & Invited talk at ECT Workshop on ``\textit{Neutron stars as multimessenger laboratories}'', Italy\\
+  2022 & Invited talk at Nordita Program on ``\textit{Magnetic field evolution}'', Sweden\\
+%  2022 & Talk at \textit{Purdue Plasma 2022} meeting, USA\\
+  2022 & Invited seminar at  Nordita Astrophysics Seminar, Nordita, Sweden\\
+%  2022 & Talk at \textit{Stars \& Compact Object} meeting, Flatiron Institute, USA \\
+%  2022 & Talk at \textit{CCA Lunch talk}, Flatiron Institute, USA \\
+%  2021 & Talk at \textit{Frontiers in Relativistic Astrophysics}, Flatiron Institute, USA \\
+%  2021 & Talk at MIAPP Program on ``\textit{High Energy Plasma Phenomena}'', Germany \\
+  2021 & Invited talk and participation on Aspen Workshop on \textit{"Exploring Extreme Matter"}, USA \\
+%  2021 & \textbf{\textit{Invited:}} Frankfurt AstroCoffee Seminar, Frankfurt, Germany. \\
+%  2020 & \textbf{\textit{Invited:}} IAS Coffee talk, Princeton, USA. \\
+  2020 & Colloquium at Department of Physics, University of Helsinki, Finland \\
+  2020 & Invited seminar  on \textit{Nordic Dynamo Series}, Nordita, Sweden \\
+%  2020 & Nordita Astro group meeting, Stockholm, Sweden. \\
+  2020 & Invited talk at \textit{St. Louis neutron star meeting}, U. of St. Louis, USA \\
+%  2020 & CCA compact object meeting, New York, USA. \\
+%  2019 & Extreme Objects Meeting, Stockholm, Sweden. \\
+  2019 & Invited seminar at Tartu Observatory, Estonia\\
+%  2019 & KITP conference on Multiscale modeling of Plasmas, Santa Barbara, USA. \\
+%  2019 & 2x Invited talks at Lorentz Center workshop on ``\textit{Bursting the Bubble}'', The Netherlands \\
+%  2019 & Invited seminar at Department of Astronomy, University of T\"ubingen, Germany \\
+%  2019 & \textbf{\textit{Invited:} Astro talk}, Uppsala University, Uppsala, Sweden. \\
+%  2019 & \textbf{Extreme Objects Meeting}, Stockholm, Sweden. \\
+%  2018 & \textbf{Astroplasmas: Particle acceleration and transport}, Rende, Italy. \\
+%  2018 & \textbf{Tuorla-Tarto meeting}, Turku, Finland. \\
+%  2018 & \textbf{\textit{Invited:}} \textbf{Time for Accretion}, Sigtuna, Sweden. \\
+%  2018 & \textbf{Astroplasmas seminar}, Princeton, USA. \\
+%  2018 & \textbf{High energy astro group meeting}, Columbia University, USA. \\
+%  2018 & \textbf{Nordita Seminar}, Nordita, Sweden. \\
+%  2018 & \textbf{\textit{Invited:}} \textbf{Astronomers' days}, Kuusamo, Finland. \\
+%  2018 & \textbf{\textit{Invited:}} \textbf{Fire and Ice: Hot QCD meets cold and dense matter}, Saariselk\"a, Finland. \\
+%  2017 & \textbf{\textit{Invited:}} \textbf{Holographic dense QCD and neutron stars}, ENS, Paris, France. \\
+% 2017 & \textbf{Astrophysics Seminar}, Helsinki, Finland. \\
+% 2017 & \textbf{Exascale thinking of particle energization problems}, Nordita, Sweden. \\
+% 2016 & \textbf{From quarks to gravitational waves: Neutron stars as a laboratory for fundamental physic}, CERN. \\
+% 2016 & \textbf{COSPAR 2016, E1.1: Accreting Neutron Stars and Stellar-mass Black Hole}, Istanbul, Turkey. (\textit{Conference canceled!})\\
+% 2016 & \textbf{INT-16-2b: Phases Of Dense Matter Workshop}, Seattle, USA. \\
+% 2016 & \textbf{JINA-CEE Symposium: Neutron Stars in the Multi-Messenger Era}, Ohio, USA. \\
+% 2016 & \textbf{Nordita Workshop on accretion onto magnetized neutron stars}, Stockholm, Sweden. \\
+% 2015 & \textbf{Workshop on Relativistic Astrophysics}, Kavalto, Finland. \\
+% 2015 & \textbf{University of Maryland, Colloquium speaker}, Washington, USA.\\
+% 2015 & \textbf{University of Tennessee, Colloquium speaker}, Tennessee, USA.\\
+% 2015 & \textbf{The Neutron Star Radius, And All That Jazz}, Montreal, Canada.\\
+% 2015 & \textbf{40 years of X-ray bursts: Extreme explosions in dense environments}, Madrid, Spain.\\
+% 2014 & \textbf{ESAC (visiting scientist presentation)}, Madrid, Spain. \\
+% 2014 & \textbf{Physics of Neutron Stars Conference}, St. Petersburg, Russia. \\
+% 2014 & \textbf{Astronomers' Days}, Savonlinna, Finland. \\
+% 2013 & \textbf{European Week of Astronomy and Space Science}, Turku, Finland. \\
+% 2012 & \textbf{Astronomers' Days}, Porvoo, Finland. \\
+\end{tabular}
+
+
+\section*{FUNDING}
+\vspace{-0.3cm}
+
+\begin{tabular}{L!{\VRule}R}
+  2020  & $\sim60\,000$ EUR, Wenner-Gren grant, Co-I (PI: D. Mitra), Nordita, Sweden\\
+          & ``\textit{Reconnection, Radio observations, and switchbacks}''\\
+  2020  & $\sim300\,000$ USD, NASA ATP grant, Co-I (PI: L. Sironi), Columbia University, USA\\
+        & ``\textit{Thermal and non-thermal emission in galaxy clusters: a first-principles approach}''\\
+  2016  & $2\,000$ EUR, Magnus Ehrnrooth Foundation, travel grant, Finland \\
+  2015--2017 & $\sim82\,000$ EUR, UTUGS Physical and Chemical Sciences PhD scholarship, Finland\\
+%    & "Constraining neutron star mass and radius"\\[0.0ex]
+  2015--2016 & $23\,000$ EUR, Magnus Ehrnrooth Foundation PhD scholarship (declined), Finland\\
+%    & "Magnetar atmosphere models" (\textit{Declined}) \\[0.0ex]
+  2014--2015 & $23\,000$ EUR, V\"ais\"al\"a Foundation PhD scholarship, Finland\\
+%    & "Magnetar atmosphere models: breaking the barrier between observations and theory" \\[1.0ex]
+\end{tabular}
+
+\section*{SUPERCOMPUTING TIME AWARDS}
+\vspace{-0.3cm}
+\begin{tabular}{L!{\VRule}R}
+    2022       & 1 MCPUhrs, Co-PI, CSC, \textit{Bayesian parameter constraints for neutron stars}, Finland\\
+    2019--2023 & $\sim 20$ MCPUhrs/year, PI, internal Flatiron Institute supercomputers, USA\\
+    2018--2021 & $\sim 20$ MCPUhrs/year, Co-PI, SNIC, \textit{Astrophysical turbulence and dynamo action}, Sweden\\
+    2018       & $\sim 60$ kCPUhrs, PI, SNIC/HPC2N, \textit{Relativistic plasmas in silico}, Sweden\\
+\end{tabular}
+
+%\section*{PUBLICATION RECORD}
+%\vspace{-0.3cm}
+%\noindent
+%I have 30 original research articles published in international peer-reviewed journals, including 
+%\textit{Nature Physics}, 
+%\textit{Physical Review Letters}, and 
+%\textit{Physical Review X}. 
+%My total citation count is 1076 in \href{https://ui.adsabs.harvard.edu/search/q=%20author%3A%22nattila%22&sort=date%20desc%2C%20bibcode%20desc&p_=0}{ADS}
+%(1205 in \href{https://scholar.google.com/citations?user=d1fD9oYAAAAJ&hl=en}{Google Scholar}); 
+%h-index is 18, i10-index 21, and i100-index 3. 
+
+
+
+\section*{INSTITUTIONAL RESPONSIBILITIES}
+\vspace{-0.3cm}
+\begin{tabular}{L!{\VRule}R}
+    2021--\phantom{2000} & Main organizer, \textit{Flatiron Observational Astrophysics Series}, USA\\
+    2021--\phantom{2000} & Member, Open Science Working Group (sub-group under Young Academy Finland)\\
+    2017\phantom{--2000} & Student Member, Astronomy Faculty Search Committee, University of Turku, Finland\\
+    2017\phantom{--2000} & Convenor, \textit{Computational Coffee Break}, Tuorla Observatory, Finland\\
+    2016--\phantom{2000} & Member, eXTP Science Working Group, Dense Matter\\
+    2015--2018           & Member, ESA XIPE Satellite Science Team (SWG2.2 Accreting Millisecond Pulsars)\\
+    2014--2019           & Member, organizing committee, CSC HPC Summer Schools, CSC, Finland\\
+    2013--2019           & Member, JuliaLang (open-source organization for Julia programming language)\\
+\end{tabular}
+
+
+\section*{CONFERENCE ORGANIZATION}
+\vspace{-0.3cm}
+\begin{tabular}{L!{\VRule}R}
+    2022 & Organizer, workshop, \textit{Dynamics of Coherent Structures in Astro-Geo-Turbulence}, USA\\
+    2022 & Co-organizer, symposium, \textit{Flatiron Exoplanet Symposium}, USA\\
+    2022 & Co-organizer, workshop, \textit{Physics of Exoplanet Atmospheres}, USA\\
+    2022 & Co-organizer, PCTS workshop, \textit{Weather and Climate on Neutron Stars}, USA\\
+    2021 & Main organizer, workshop, \textit{Frontiers in Relativistic Turbulence}, USA\\
+    2017 & Co-organizer, workshop, \textit{Exascale thinking to Particle Energization Problems}, Sweden\\
+    2015 & Local organizing committee, workshop, \textit{Relativistic Astrophysics}, Finland\\
+\end{tabular}
+
+
+
+\vspace{-0.3cm}
+\section*{REVIEWING ACTIVITIES}
+\vspace{-0.3cm}
+
+\textbf{Peer reviewer:} Nature, Physical Review Letters, The Astrophysical Journal Letters, The Astrophysical Journal, The Astrophysical Journal Supplement Series, Monthly Notices of the Royal Astronomical Society, Astronomy \& Astrophysics, Physical Review D, Physical Review E, European Physical Journal A, Universe.
+
+\vspace{-0.3cm}
+\section*{MEMBERSHIPS OF SCIENTIFIC SOCIETIES}
+\vspace{-0.3cm}
+\begin{tabular}{L!{\VRule}R}
+    2019--\phantom{3000}& Member, Young Academy Finland, under Academy of Science and Letters, Finland\\
+    2018--\phantom{3000}& IAU Junior Member\\
+    2012--\phantom{3000}& Member, Finnish Astronomical Society, Finland\\
+\end{tabular}
+
+\vspace{-0.3cm}
+\section*{PUBLIC OUTREACH}
+\vspace{-0.3cm}
+\begin{tabular}{L!{\VRule}R}
+    2020--\phantom{3000}& Responses/commentaries on newspapers and popular science magazines\\
+                        & (T\"ahdet \& Avaruus, 9/2020, 10/2020; Helsingin Sanomat 6/1/2021)\\
+    2020\phantom{--3000}& Meet the Scientist, \href{https://www.youtube.com/watch?v=Ch38VpF341I}{youtu.be/Ch38VpF341I}\\
+                        & Educational video about \textit{Gravitation} for high-school students\\
+    2019\phantom{--3000}& Public Science Talk, Academy Club for Young Scientists, \href{https://www.youtube.com/watch?v=W7ljVlSEAX4}{youtu.be.com/W7ljVlSEAX4} \\
+                        & \textit{Astrophysical Turbulence: from stirring coffee to mixing galaxies} \\
+    2019--2020          & Appearances on popular science articles on \textit{Quark matter cores in neutron stars}\\
+                        & \href{https://astrobites.org/2019/03/29/a-strange-type-of-matter-may-lie-at-the-heart-of-neutron-stars/}{Astrobites},
+         \href{https://www.universetoday.com/146476/neutron-stars-could-have-a-layer-of-exotic-quark-matter-inside-them/}{Universe Today},
+         \href{https://physicsworld.com/a/neutron-stars-may-contain-free-quarks/}{Physics World},
+         \href{https://en.wikipedia.org/wiki/QCD_matter}{Wikipedia},
+         T\"ahdet \& Avaruus 4/2019 \\
+    2018\phantom{--3000} & Personal profile on Finnish astronomy Magazine T\"ahdet \& Avaruus 2/2018\\
+    2017\phantom{--3000} & Appearances on popular newspaper articles on \textit{Groundbreaking neutron star measurement}\\
+                         & Incl. 
+                         \href{https://cosmosmagazine.com/space/nuke-blasts-reveal-true-size-of-neutron-stars}{Cosmos},
+                         \href{https://phys.org/news/2017-11-method-neutron-star-size-based.html}{Phys.org}.
+  \href{https://www.avaruus.fi/uutiset/tahdet-sumut-ja-galaksit/turkulaiset-keksivat-uuden-tavan-mitata-neutronitahtien-kokoa.html}{T{\"a}hdet \& Avaruus (25.11.2017)}\\
+%  \href{https://www.turkulainen.fi/artikkeli/578926-turun-yliopiston-tutkimusryhma-kehitti-tavan-mitata-neutronitahtien-kokoa}{Turkulainen (10.11.2017)},
+%  \href{http://www.ts.fi/uutiset/paikalliset/3724265/uusi+menetelma+mahdollistaa+neutronitahtien+sateen+mittauksen+galaksin+toiselta+laidalta}{Turun Sanomat (10.11.2017)},
+%  \href{http://www.aamuset.fi/uutiset/3758822/kosmiset+ydinrajahdykset+tuovat+uutta+tietoa+neutronitahtien+rakenteesta}{Aamuset (8.12.2017)},
+%  \href{https://www.tekniikkatalous.fi/tiede/avaruus/neutronitahtien-tutkija-kaytti-apunaan-nasa-n-satelliitteja-kynaa-ja-paperia-kuutiosentti-neutronimateriaa-painaa-uskomattomat-100-miljoonaa-tonnia-6691137}{Tekniikka \& Talous (8.12.2017)},
+%  \href{https://www.verkkouutiset.fi/kosmisista-ydinrajahdyksista-uutta-tietoa-neutronitahtien-rakenteesta/}{Verkkouutiset (8.12.2017)} \\
+\end{tabular}
+
+
+\vspace{-0.3cm}
+\section*{MAJOR COLLABORATIONS}
+\vspace{-0.3cm}
+\textbf{A. Beloborodov} (radiative plasmas, Columbia, USA), 
+\textbf{A. Brandenburg} (MHD turbulence, Nordita, Sweden), 
+\textbf{J. Cho} (neutron star fluid dynamics, Brandeis, USA), 
+\textbf{L. Comisso} (relativistic turbulence, Columbia, USA), 
+\textbf{J. Kajava} (thermonuclear X-ray bursts, ESAC, Spain), 
+\textbf{A. Kurkela}, (neutron star quark matter, Stavanger, Norway),  
+\textbf{C. Miller} (neutron star mass-radius measurements, Maryland, USA), 
+\textbf{D. Mitra} (switchbacks in the solar wind, Nordita, Sweden), 
+\textbf{A. Philippov} (pulsar magnetospheres, Maryland, USA),  
+\textbf{J. Poutanen} (pulse profile modeling, Turku, Finland), 
+\textbf{B. Ripperda} (compact object magnetospheres, IAS, USA), 
+\textbf{L. Sironi} (turbulence, reconnection, and shocks, Columbia, USA),  
+\textbf{A. Steiner} (neutron star EOS, Tennessee USA), 
+\textbf{V. Suleimanov} (neutron star atmosphere models, Tubingen, Germany), 
+\textbf{A. Veledina} (accretion flows, Turku, Finland), 
+\textbf{A. Vuorinen} (neutron star quark matter, Helsinki, Finland), 
+\textbf{V. Zhdankin} (turbulence, Flatiron, USA).
+
+
+%--------------------------------------------------
+\clearpage
+%\setcounter{page}{1}
+
+\renewcommand\refname{\phantom{bla}}
+\input{kenottaja.tex}
+
+\begin{center}
+\textbf{PUBLICATION RECORD}
+\end{center}
+
+\noindent
+I have 31 original research articles published in international peer-reviewed journals, including 
+\textit{Nature Physics}, 
+\textit{Physical Review Letters}, and 
+\textit{Physical Review X}. 
+In addition, 1 invited book chapter, 3 conference proceedings, and 6 major open-source software repositories.\\
+
+\noindent
+My total citation count is 1262 in \href{https://ui.adsabs.harvard.edu/search/q=%20author%3A%22nattila%22&sort=date%20desc%2C%20bibcode%20desc&p_=0}{ADS}
+(1315 in \href{https://scholar.google.com/citations?user=d1fD9oYAAAAJ&hl=en}{Google Scholar}); 
+h-index is 18, i10-index 23, and i100-index 3. 
+
+
+\section*{Submitted:}
+\vspace{-1cm}
+
+\begin{thebibliography}{4}
+
+\bibitem{xxx}
+E.~{Annala}, T.~{Gorda}, A.~{Kurkela}, \textbf{J.} \textbf{{N{\"a}ttil{\"a}}},
+  and A.~{Vuorinen}.
+\newblock {Strongly interacting matter exhibits deconfined behavior in massive neutron stars}.
+\newblock {\em }, December 2022.
+\href{http://arxiv.org/abs/2303.11356}{\nolinkurl{ [arXiv:2303.11356]}}.
+
+\bibitem{2021arXiv211008024y}
+\textbf{J}.~{\textbf{N\"attil\"a}} and J.~Y-K. {Cho}.
+\newblock {Neutron Star Atmosphere-Ocean Dynamics}.
+\newblock {\em ApJL}, January 2023.
+%\href{http://arxiv.org/abs/2110.08024}{\nolinkurl{ [arXiv:2110.08024]}}.
+
+\bibitem{2021arXiv211008024z}
+C.~{Demidem}, \textbf{J}.~{\textbf{N\"attil\"a}}, and A.~{Veledina}.
+\newblock {Relativistic Collisionless Shocks in Inhomogeneous Magnetized Plasmas}.
+\newblock {\em ApJL}, December 2022.
+\href{http://arxiv.org/abs/2212.06053}{\nolinkurl{ [arXiv:2212.06053]}}.
+
+\bibitem{2021arXiv211008024x}
+J.~{Skinner}, \textbf{J}.~{\textbf{N\"attil\"a}}, and J.~Y-K. {Cho}.
+\newblock {Repeated Cyclogenesis on Hot-Exoplanet Atmospheres with Deep Heating}.
+\newblock {\em Phys. Rev. Lett.}, December 2022.
+\href{http://arxiv.org/abs/2212.05114}{\nolinkurl{ [arXiv:2212.05114]}}.
+
+
+\end{thebibliography}
+
+
+
+\section*{Published:}
+\vspace{-1cm}
+
+\begin{thebibliography}{10}
+
+\bibitem{2021arXiv211008024S}
+K.~{Smedt}, D.~{Ruprecht}, J.~{Niesen}, S.~{Tobias}, and \textbf{J}.
+  {\textbf{N{\"a}ttil{\"a}}}.
+\newblock {New applications for the Boris Spectral Deferred Correction
+  algorithm for plasma simulations}.
+\newblock {\em Applied Mathematics and Computation}, November 2022,
+  \href{http://arxiv.org/abs/2110.08024}{\nolinkurl{ [arXiv:2110.08024]}}.
+
+\bibitem{2022PhRvL.128g5101N}
+\textbf{J}. \textbf{N{\"a}ttil{\"a}} and A.~M. {Beloborodov}.
+\newblock {Heating of Magnetically Dominated Plasma by Alfv{\'e}n-Wave
+  Turbulence}.
+\newblock {\em \prl}, 128(7):075101, February 2022,
+  \href{http://arxiv.org/abs/2111.15578}{\nolinkurl{ [arXiv:2111.15578]}}.
+
+
+\bibitem{2021arXiv210901381B}
+M.~{Bussov} and \textbf{J.} {\textbf{N{\"a}ttil{\"a}}}.
+\newblock {Segmentation of turbulent computational fluid dynamics simulations
+  with unsupervised ensemble learning}.
+\newblock {\em Signal Processing: Image Communication}, 99:116450, September
+  2021, \href{http://arxiv.org/abs/2109.01381}{\nolinkurl{
+  [arXiv:2109.01381]}}.
+
+\bibitem{2021PhRvL.127c5101S}
+L.~{Sironi}, I.~{Plotnikov}, \textbf{J. {N{\"a}ttil{\"a}}}, and A.~M.
+  {Beloborodov}.
+\newblock {Coherent Electromagnetic Emission from Relativistic Magnetized
+  Shocks}.
+\newblock {\em \prl}, 127(3):035101, July 2021,
+  \href{http://arxiv.org/abs/2107.01211}{\nolinkurl{ [arXiv:2107.01211]}}.
+
+\bibitem{2021arXiv210505132A}
+E.~{Annala}, T.~{Gorda}, E.~{Katerini}, A.~{Kurkela}, \textbf{J.
+  {N{\"a}ttil{\"a}}}, V.~{Paschalidis}, and A.~{Vuorinen}.
+\newblock {Multimessenger constraints for ultra-dense matter}.
+\newblock {\em \textit{PRX}}, May 2021,
+  \href{http://arxiv.org/abs/2105.05132}{\nolinkurl{ [arXiv:2105.05132]}}.
+
+\bibitem{2021MNRAS.503..688S}
+E.~{Sobacchi}, \textbf{J. {N{\"a}ttil{\"a}}}, and L.~{Sironi}.
+\newblock {A fully kinetic model for orphan gamma-ray flares in blazars}.
+\newblock {\em \mnras}, 503(1):688--693, May 2021,
+  \href{http://arxiv.org/abs/2102.11770}{\nolinkurl{ [arXiv:2102.11770]}}.
+
+\bibitem{2021ApJ...921...87N}
+\textbf{J}. \textbf{N{\"a}ttil{\"a}} and A.~M. {Beloborodov}.
+\newblock {Radiative Turbulent Flares in Magnetically Dominated Plasmas}.
+\newblock {\em \apj}, 921(1):87, November 2021,
+  \href{http://arxiv.org/abs/2012.03043}{\nolinkurl{ [arXiv:2012.03043]}}.
+
+\bibitem{2020arXiv200812817A}
+M.~{Al-Mamun}, A.~W. {Steiner}, \textbf{J.} \textbf{N{\"a}ttil{\"a}},
+  J.~{Lange}, R.~{O'Shaughnessy}, I.~{Tews}, S.~{Gandolfi}, C.~{Heinke}, and
+  S.~{Han}.
+\newblock {Combining Electromagnetic and Gravitational-Wave Constraints on
+  Neutron-Star Masses and Radii}.
+\newblock {\em \prl}, August 2020,
+  \href{http://arxiv.org/abs/2008.12817}{\nolinkurl{ [arXiv:2008.12817]}}.
+
+\bibitem{2020A&A...643A..84L}
+V.~{Loktev}, T.~{Salmi}, \textbf{J}. \textbf{N{\"a}ttil{\"a}}, and
+  J.~{Poutanen}.
+\newblock {Oblate Schwarzschild approximation for polarized radiation from
+  rapidly rotating neutron stars}.
+\newblock {\em \aap}, 643:A84, November 2020,
+  \href{http://arxiv.org/abs/2009.08852}{\nolinkurl{ [arXiv:2009.08852]}}.
+
+\bibitem{2020A&A...641A..15S}
+T.~{Salmi}, V.~F. {Suleimanov}, \textbf{J}. \textbf{N{\"a}ttil{\"a}}, and
+  J.~{Poutanen}.
+\newblock {Magnetospheric return-current-heated atmospheres of rotation-powered
+  millisecond pulsars}.
+\newblock {\em \aap}, 641:A15, September 2020,
+  \href{http://arxiv.org/abs/2002.11427}{\nolinkurl{ [arXiv:2002.11427]}}.
+
+\bibitem{2020NatPh..16..907A}
+E.~{Annala}, T.~{Gorda}, A.~{Kurkela}, \textbf{J.} \textbf{{N{\"a}ttil{\"a}}},
+  and A.~{Vuorinen}.
+\newblock {Evidence for quark-matter cores in massive neutron stars}.
+\newblock {\em Nature Physics}, 16(9):907--910, June 2020,
+  \href{http://arxiv.org/abs/1903.09121}{\nolinkurl{ [arXiv:1903.09121]}}.
+
+\bibitem{2020A&A...638A.142A}
+P.~{Abolmasov}, \textbf{J}. \textbf{N{\"a}ttil{\"a}}, and J~{Poutanen}.
+\newblock {Kilohertz quasi-periodic oscillations from neutron star spreading
+  layers}.
+\newblock {\em \aap}, 638:A142, June 2020,
+  \href{http://arxiv.org/abs/1910.09906}{\nolinkurl{ [arXiv:1910.09906]}}.
+
+\bibitem{2019ApJ...884..144V}
+A.~{Veledina}, \textbf{J}. \textbf{N{\"a}ttil{\"a}}, and A.~M. {Beloborodov}.
+\newblock {Pulsar Wind-heated Accretion Disk and the Origin of Modes in
+  Transitional Millisecond Pulsar PSR J1023+0038}.
+\newblock {\em \apj}, 884(2):144, October 2019,
+  \href{http://arxiv.org/abs/1906.02519}{\nolinkurl{ [arXiv:1906.02519]}}.
+
+\bibitem{2019A&A...629A..89N}
+F.~{Nauman} and \textbf{J}. \textbf{N{\"a}ttil{\"a}}.
+\newblock {Exploring helical dynamos with machine learning: Regularized linear
+  regression outperforms ensemble methods}.
+\newblock {\em \aap}, 629:A89, September 2019,
+  \href{http://arxiv.org/abs/1905.08193}{\nolinkurl{ [1905.08193]}}.
+
+\bibitem{2019arXiv190606306N}
+\textbf{J}. \textbf{N{\"a}ttil{\"a}}.
+\newblock {Runko: Modern multiphysics toolbox for plasma simulations}.
+\newblock {\em A\&A}, 664:A68, August 2022 (submitted originally on June 2019),
+  \href{http://arxiv.org/abs/1906.06306}{\nolinkurl{ [1906.06306]}}.
+
+\bibitem{2019SCPMA..6229506I}
+J.~J.~M. {in't Zand}, E.~{Bozzo}, J.~{Qu}, X.-D. {Li}, L.~{Amati}, Y.~{Chen},
+  I.~{Donnarumma}, V.~{Doroshenko}, S.~A. {Drake}, and {et~al. (incl.
+  \textbf{J}. \textbf{{N{\"a}ttil{\"a}}})}.
+\newblock {Observatory science with eXTP}.
+\newblock {\em Science China Physics, Mechanics, and Astronomy}, 62:29506,
+  February 2019.
+
+\bibitem{2019SCPMA..6229503W}
+A.~L. {Watts}, W.~{Yu}, J.~{Poutanen}, S.~{Zhang}, S.~{Bhattacharyya},
+  S.~{Bogdanov}, L.~{Ji}, A.~{Patruno}, T.~E. {Riley}, and {et~al. (incl.
+  \textbf{J}. \textbf{{N{\"a}ttil{\"a}}})}.
+\newblock {Dense matter with eXTP}.
+\newblock {\em Science China Physics, Mechanics, and Astronomy}, 62:29503,
+  February 2019.
+
+\bibitem{2018ApJ...866...53L}
+Z.~{Li}, V.~F. {Suleimanov}, J.~{Poutanen}, T.~{Salmi}, M.~{Falanga},
+  \textbf{J}. {\textbf{N{\"a}ttil{\"a}}}, and R.~{Xu}.
+\newblock {Evidence for the Photoionization Absorption Edge in a Photospheric
+  Radius Expansion X-Ray Burst from GRS 1747$-$312 in Terzan 6}.
+\newblock {\em \apj}, 866:53, October 2018,
+  \href{http://arxiv.org/abs/1809.00098}{\nolinkurl{ [arXiv:1809.00098]}}.
+
+\bibitem{2018A&A...618A.161S}
+T.~{Salmi}, \textbf{J}. \textbf{{N{\"a}ttil{\"a}}}, and J.~{Poutanen}.
+\newblock {Bayesian parameter constraints for neutron star masses and radii
+  using X-ray timing observations of accretion-powered millisecond pulsars}.
+\newblock {\em \aap}, 618:A161, October 2018,
+  \href{http://arxiv.org/abs/1805.01149}{\nolinkurl{ [arXiv:1805.01149]}}.
+
+\bibitem{2018ApJ...863....8P}
+P.~{Pihajoki}, M.~{Mannerkoski}, \textbf{J}. \textbf{{N{\"a}ttil{\"a}}}, and
+  P.~H. {Johansson}.
+\newblock {General purpose ray-tracing and polarized radiative transfer in
+  General Relativity}.
+\newblock {\em \apj}, 863:8, August 2018,
+  \href{http://arxiv.org/abs/1804.04670}{\nolinkurl{ [arXiv:1804.04670]}}.
+
+\bibitem{2018A&A...615A..50N}
+\textbf{J}. \textbf{{N{\"a}ttil{\"a}}} and P.~{Pihajoki}.
+\newblock {Radiation from rapidly rotating oblate neutron stars}.
+\newblock {\em \aap}, 615:A50, July 2018,
+  \href{http://arxiv.org/abs/1709.07292}{\nolinkurl{ [arXiv:1709.07292]}}.
+
+\bibitem{2017A&A...608A..31N}
+\textbf{J}. \textbf{{N{\"a}ttil{\"a}}}, M.~C. {Miller}, A.~W. {Steiner},
+  J.~J.~E. {Kajava}, V.~F. {Suleimanov}, and J.~{Poutanen}.
+\newblock {Neutron star mass and radius measurements from atmospheric model
+  fits to X-ray burst cooling tail spectra}.
+\newblock {\em \aap}, 608:A31, December 2017,
+  \href{http://arxiv.org/abs/1709.09120}{\nolinkurl{ [arXiv:1709.09120]}}.
+
+\bibitem{2017MNRAS.472.3905S}
+V.~F. {Suleimanov}, J.~J.~E. {Kajava}, S.~V. {Molkov}, \textbf{J}.
+  \textbf{{N{\"a}ttil{\"a}}}, A.~A. {Lutovinov}, K.~{Werner}, and
+  J.~{Poutanen}.
+\newblock {Basic parameters of the helium-accreting X-ray bursting neutron star
+  in 4U 1820-30}.
+\newblock {\em \mnras}, 472:3905--3913, December 2017,
+  \href{http://arxiv.org/abs/1708.09168}{\nolinkurl{ [arXiv:1708.09168]}}.
+
+\bibitem{2017MNRAS.472...78K}
+J.~J.~E. {Kajava}, K.~I.~I. {Koljonen}, \textbf{J}. \textbf{N{\"a}ttil{\"a}},
+  V.~{Suleimanov}, and J.~{Poutanen}.
+\newblock {Variable spreading layer in 4U 1608-52 during thermonuclear X-ray
+  bursts in the soft state}.
+\newblock {\em \mnras}, 472:78--89, November 2017,
+  \href{http://arxiv.org/abs/1707.09479}{\nolinkurl{ [arXiv:1707.09479]}}.
+
+\bibitem{2017A&A...604A..77K}
+J.~{Kuuttila}, J.~J.~E. {Kajava}, \textbf{J}. \textbf{{N{\"a}ttil{\"a}}}, S.~E.
+  {Motta}, C.~{S{\'a}nchez-Fern{\'a}ndez}, E.~{Kuulkers}, A.~{Cumming}, and
+  J.~{Poutanen}.
+\newblock {Flux decay during thermonuclear X-ray bursts analysed with the
+  dynamic power-law index method}.
+\newblock {\em \aap}, 604:A77, August 2017,
+  \href{http://arxiv.org/abs/1705.05653}{\nolinkurl{ [arXiv:1705.05653]}}.
+
+\bibitem{2017MNRAS.466..906S}
+V.~F. {Suleimanov}, J.~{Poutanen}, \textbf{J}. \textbf{N{\"a}ttil{\"a}},
+  J.~J.~E. {Kajava}, M.~G. {Revnivtsev}, and K.~{Werner}.
+\newblock {The direct cooling tail method for X-ray burst analysis to constrain
+  neutron star masses and radii}.
+\newblock {\em \mnras}, 466:906--913, April 2017,
+  \href{http://arxiv.org/abs/1611.09885}{\nolinkurl{ [arXiv:1611.09885]}}.
+
+\bibitem{2017MNRAS.464L...6K}
+J.~J.~E. {Kajava}, \textbf{J}. \textbf{N{\"a}ttil{\"a}}, J.~{Poutanen},
+  A.~{Cumming}, V.~{Suleimanov}, and E.~{Kuulkers}.
+\newblock {Detection of burning ashes from thermonuclear X-ray bursts}.
+\newblock {\em \mnras}, 464:L6--L10, January 2017,
+  \href{http://arxiv.org/abs/1608.06801}{\nolinkurl{ [arXiv:1608.06801]}}.
+
+\bibitem{2016A&A...591A..25N}
+\textbf{J}. \textbf{N{\"a}ttil{\"a}}, A.~W. {Steiner}, J.~J.~E. {Kajava}, V.~F.
+  {Suleimanov}, and J.~{Poutanen}.
+\newblock {Equation of state constraints for the cold dense matter inside
+  neutron stars using the cooling tail method}.
+\newblock {\em \aap}, 591:A25, June 2016,
+  \href{http://arxiv.org/abs/1509.06561}{\nolinkurl{ [arXiv:1509.06561]}}.
+
+\bibitem{2015A&A...581A..83N}
+\textbf{J}. \textbf{N{\"a}ttil{\"a}}, V.~F. {Suleimanov}, J.~J.~E. {Kajava},
+  and J.~{Poutanen}.
+\newblock {Models of neutron star atmospheres enriched with nuclear burning
+  ashes}.
+\newblock {\em \aap}, 581:A83, September 2015,
+  \href{http://arxiv.org/abs/1507.01525}{\nolinkurl{ [arXiv:1507.01525]}}.
+
+\bibitem{2014MNRAS.445.4218K}
+J.~J.~E. {Kajava}, \textbf{J}. \textbf{N{\"a}ttil{\"a}}, O.-M. {Latvala},
+  M.~{Pursiainen}, J.~{Poutanen}, V.~F. {Suleimanov}, M.~G. {Revnivtsev},
+  E.~{Kuulkers}, and D.~K. {Galloway}.
+\newblock {The influence of accretion geometry on the spectral evolution during
+  thermonuclear (type I) X-ray bursts}.
+\newblock {\em \mnras}, 445:4218--4234, December 2014,
+  \href{http://arxiv.org/abs/1406.0322}{\nolinkurl{ [arXiv:1406.0322]}}.
+
+\bibitem{2014MNRAS.442.3777P}
+J.~{Poutanen}, \textbf{J}. \textbf{N{\"a}ttil{\"a}}, J.~J.~E. {Kajava}, O.-M.
+  {Latvala}, D.~K. {Galloway}, E.~{Kuulkers}, and V.~F. {Suleimanov}.
+\newblock {The effect of accretion on the measurement of neutron star mass and
+  radius in the low-mass X-ray binary 4U 1608-52}.
+\newblock {\em \mnras}, 442:3777--3790, August 2014,
+  \href{http://arxiv.org/abs/1405.2663}{\nolinkurl{ [arXiv:1405.2663]}}.
+
+\end{thebibliography}
+
+
+
+\vspace{1cm}
+\section*{Invited Book Chapters}
+\vspace{-1cm}
+
+%\bibliographystyle{hunsrt}
+\begin{thebibliography}{1}
+
+\bibitem{ns_book}
+\textbf{J. N\"attil\"a} and J.~J.~E. {Kajava}.
+\newblock {Fundamental Physics with Neutron Stars}.
+\newblock {\em Handbook of X-ray and Gamma-ray Astrophysics }
+\newblock (editors: Cosimo Bambi and Andrea Santangelo), December 2022, Springer.
+  \href{http://arxiv.org/abs/2211.15721}{\nolinkurl{ [arXiv:2211.15721]}}.
+
+\end{thebibliography}
+
+
+
+
+\vspace{1cm}
+\section*{Proceedings}
+
+\begin{thebibliography}{1}
+\vspace{-1cm}
+
+\bibitem{SNOWMASS}
+S. Bogdanov, et. al (including \textbf{J. N\"attil\"a}).
+\newblock {Snowmass 2021 Cosmic Frontier White Paper: The Dense Matter Equation of State and QCD Phase Transitions}.
+\newblock September, 2022.
+[\href{https://arxiv.org/abs/2209.07412}{\nolinkurl{arXiv:2209.07412}}].
+
+\bibitem{INTEGRAL}
+E. {Annala}, T. {Gorda}, A. {Kurkela}, \textbf{J. {N{\"a}ttil{\"a}}}, and A. {Vuorinen}.
+\newblock {Constraining the properties of neutron-star matter with observations}.
+\newblock In {\em 12th INTEGRAL Conference}, Geneva, Switzerland, 11-15 February 2019
+[\href{https://arxiv.org/abs/1904.01354}{\nolinkurl{arXiv:1904.01354}}].
+
+\bibitem{XIPE}
+P.~{Soffitta}, R.~{Bellazzini}, E.~{Bozzo}, V.~{Burwitz}, A.~{Castro-Tirado},
+  E.~{Costa}, T.~{Courvoisier}, H.~{Feng}, S.~{Gburek}, R.~{Goosmann}, and
+  et~al. (incl. \textbf{J}. \textbf{{N{\"a}ttil{\"a}}} )
+\newblock {XIPE: the x-ray imaging polarimetry explorer}.
+\newblock In {\em Space Telescopes and Instrumentation 2016: Ultraviolet to
+  Gamma Ray}, volume 9905 Proceedings, page 990515, July 2016.
+\href{https://doi.org/10.1117/12.2233046}{\nolinkurl{doi.org/10.1117/12.2233046}}.
+% TODO
+\end{thebibliography}
+
+
+
+\vspace{1cm}
+\section*{Theses}
+\vspace{-1cm}
+
+%\bibliographystyle{hunsrt}
+\begin{thebibliography}{3}
+
+\bibitem{NatjThesis}
+\textbf{J. N\"attil\"a}.
+\newblock{X-ray bursts as a tool to constrain the equation of state of the ultra-dense matter inside neutron stars}.
+\newblock PhD thesis, University of Turku, Finland, 2017. \href{http://urn.fi/URN:ISBN:978-951-29-7057-5}{\nolinkurl{ISBN:978-951-29-7057-5}}.
+
+\bibitem{NatjMaster}
+\textbf{J. N\"attil\"a}.
+\newblock {Mass and radius constraints for neutron stars using the cooling tail method}.
+\newblock Master's thesis, University of Oulu, Finland, 2013. \href{http://urn.fi/URN:NBN:fi:oulu-201312041966}{\nolinkurl{oulu-201312041966}}.
+
+\bibitem{NatjBachelor}
+\textbf{J. N\"attil\"a}.
+\newblock {Spectral analysis of X-ray bursts from neutron stars: IGR
+  J1747--2721 (\textit{Neutronit\"ahtien r\"ontgenpurkaukset ja niiden
+  spektrianalyysi: IGR J1747--2721})}.
+\newblock Bachelor's thesis, University of Oulu, Finland, 2012.
+
+\end{thebibliography}
+
+%
+
+
+\vspace{1cm}
+\section*{Open-source software}
+\vspace{-1cm}
+
+\begin{thebibliography}{6}
+\bibitem{runko}
+    \textbf{Runko}, 
+\newblock Modern \textsc{C++}14/\textsc{python3} toolbox for kinetic plasma simulations. 
+ \newblock \mbox{\href{https://github.com/natj/Runko}{\nolinkurl{https://github.com/natj/runko}}}
+
+\bibitem{corgi}
+    \textbf{CORGI}, 
+ \newblock \textsc{C++}14 grid infrastructure for massively parallel multi-physics simulations. 
+ \newblock \mbox{\href{https://github.com/natj/corgi}{\nolinkurl{https://github.com/natj/corgi}}} 
+
+\bibitem{mpi4cpp}
+    \textbf{mpi4cpp}, 
+\newblock User-friendly \textsc{C++}14 MPI headers with template metaprogramming. 
+ \newblock \mbox{\href{https://github.com/natj/mpi4cpp}{\nolinkurl{https://github.com/natj/mpi4cpp}}}
+
+\bibitem{bender}
+    \textbf{Bender, ray tracing code}, 
+        \newblock General relativistic ray tracing code for computing radiation from rapidly rotating oblate neutron stars in \textsc{Julia}/\textsc{python3}. 
+ \newblock \mbox{\href{https://github.com/natj/bender}{\nolinkurl{https://github.com/natj/bender}}}
+
+\bibitem{hydro}
+    \textbf{Hydro, modular 2D hydrodynamical code} 
+\newblock with unsplitted HLLC Rieman solver, second order Runge-Kutta time-stepping, and linear piecewise reconstruction written in pure \textsc{Julia}.
+ \newblock \mbox{\href{https://github.com/natj/hydro}{\nolinkurl{https://github.com/natj/hydro}}}
+
+\bibitem{cellularautomata}
+    \textbf{CellularAutomata.jl}, 
+\newblock \textsc{Julia} library for 1/2D elementary and totalistic Cellular automata modeling. 
+\newblock \mbox{\href{https://github.com/natj/CellularAutomata.jl}{\nolinkurl{https://github.com/natj/CellularAutomata.jl}}}
+\end{thebibliography}
+
+\noindent
+$+$ Smaller libraries and software available at \mbox{\href{https://github.com/natj}{\nolinkurl{https://github.com/natj}}}.
+
+
+
+
+
+
+\end{document}
+
